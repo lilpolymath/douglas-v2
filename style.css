@@ -10,9 +10,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   background-color: #06283D;
-  background-size: 40px 40px;
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #707070 1px, #06283D 1px);
 }
 
 .bold {
@@ -30,15 +28,15 @@ a {
   color: #47B5FF;
 }
 
-.home, .story {
+.container {
   width: 100%;
   margin: 0 auto;
   max-width: 600px;
   padding: 48px 24px;
-  font-family: 'Raleway';
+  font-family: 'proximanova-regular', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.story {
+.story, .people {
   max-width: 800px;
 }
 
@@ -76,4 +74,18 @@ a {
 
 li+li {
   margin-top: 8px;
+}
+
+.people>div+div {
+  margin-top: 30px;
+}
+
+.people ul {
+  margin: 12px 0;
+  padding-left: 32px;
+  list-style-type: disc;
+}
+
+.back {
+  text-decoration: none;
 }
