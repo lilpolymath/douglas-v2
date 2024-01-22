@@ -26,31 +26,34 @@ body {
 
 a {
   color: #47B5FF;
-
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 600px;
   padding: 48px 24px;
   font-family: 'proximanova-regular', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.story, .people, .posts {
+.story, .people, .posts, .post {
   max-width: 800px;
 }
 
-.home h1, .story h1, .posts h1 {
+.home {
+  max-width: 600px;
+}
+
+.home h1, .story h1, .posts h1, .post h1 {
   font-size: 40px;
-  margin-top: 12px;
+  margin-top: 24px;
   margin-bottom: 16px;
+  line-height: 1.2;
+
 }
 
 @media screen and (max-width: 500px) {
-  .home h1, .story h1 {
+  .home h1, .story h1, .posts h1, .post h1 {
     font-size: 28px;
-    line-height: 1.2;
   }
 }
 
@@ -138,4 +141,16 @@ ul {
 
 .post-section .list li {
   margin-bottom: 10px;
+}
+
+.post {
+  margin-top: 30px;
+}
+
+.post h1 {
+  margin-bottom: 0;
+}
+
+.post-content {
+  margin-top: 30px;
 }
