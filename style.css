@@ -147,10 +147,62 @@ ul {
   margin-top: 30px;
 }
 
-.post h1 {
+.post h2 {
+  font-size: 28px;
+  margin-top: 24px;
   margin-bottom: 0;
 }
 
 .post-content {
   margin-top: 30px;
+}
+
+.post .post-meta {
+  color: #ffa500;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Style for images within the blog post content */
+.post .post-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Style for links within the blog post content */
+.post .post-content a {
+  color: #0078d4;
+  text-decoration: underline;
+}
+
+/* Style for headings within the blog post content */
+.post .post-content h2,
+.post .post-content h3,
+.post .post-content h4 {
+  margin-top: 20px;
+}
+
+/* Style for blockquotes within the blog post content */
+.post .post-content blockquote {
+  background-color: #f5f5f5;
+  color: #06283D;
+  border-left: 5px solid #0078d4;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+/* Style for unordered and ordered lists within the blog post content */
+.post .post-content ul,
+.post .post-content ol {
+  margin-left: 20px;
+}
+
+/* Style for list items within the blog post content */
+.post .post-content li {
+  margin-bottom: 10px;
+}
+
+.post-content>*+* {
+  margin-top: 20px;
 }
