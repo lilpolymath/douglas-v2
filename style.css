@@ -14,7 +14,7 @@ body {
 }
 
 .bold {
-  color: orange;
+  color: #ffa500;
   font-weight: bold;
 }
 
@@ -26,6 +26,7 @@ body {
 
 a {
   color: #47B5FF;
+
 }
 
 .container {
@@ -36,11 +37,11 @@ a {
   font-family: 'proximanova-regular', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.story, .people {
+.story, .people, .posts {
   max-width: 800px;
 }
 
-.home h1, .story h1 {
+.home h1, .story h1, .posts h1 {
   font-size: 40px;
   margin-top: 12px;
   margin-bottom: 16px;
@@ -75,17 +76,17 @@ a {
   margin-top: 30px;
 }
 
-.story h3 {
-  margin-bottom: 0;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-li+li {
+.story li+li, .links li+li {
   margin-top: 8px;
 }
 
 .people>div+div {
   margin-top: 30px;
+}
+
+ul {
+  margin-left: 12px;
+  list-style-type: none;
 }
 
 .people ul {
@@ -95,11 +96,46 @@ li+li {
 }
 
 .back {
+  gap: 8px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
 
+.back:hover {
+  text-decoration: underline;
+}
+
 .footnote {
-  color: orange;
+  color: #ffa500;
   margin-top: 30px;
   font-weight: bold;
+}
+
+.posts {
+  margin-top: 30px;
+}
+
+.post-section {
+  margin-top: 30px;
+}
+
+.post-section+.post-section {
+  margin-top: 40px;
+}
+
+.post-section .title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.post-section .list {
+  margin-left: 16px;
+  margin-bottom: 30px;
+  list-style-type: disc;
+}
+
+.post-section .list li {
+  margin-bottom: 10px;
 }
